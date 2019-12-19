@@ -1,0 +1,16 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "DynDNS Email API",
+        "description": "We are pleased to offer a comprehensive Application Programming Interface (API) for Dyn Email Delivery and Email Delivery Express.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "emailapi.dynect.netrest\/RETURN-TYPE\/"
+    ],
+    "paths": [],
+    "components": {
+        "schemas": []
+    }
+}
