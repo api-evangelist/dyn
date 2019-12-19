@@ -1,0 +1,1164 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Dyn",
+        "description": "",
+        "termsOfService": ""
+    },
+    "servers": [
+        "https"
+    ],
+    "paths": {
+        "accounts": {
+            "get": {
+                "summary": "Retrieve email sub-accounts",
+                "description": "Retrieving a list of up to 25 Email Sub-Accounts",
+                "operationId": "GetAccounts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "startindex",
+                        "in": "query",
+                        "description": "An integer to indicate the starting index of where to begin the list of sub-accounts. Defaults to 0, returning the first 25 sub-accounts. For accounts with a large number of sub-accounts, run the method multiple times, incrementing the start index by 25 for each iteration."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create an Email Sub-Account (API)",
+                "description": "Creating an Email Sub-Account using the API requires specific syntax for the REST API.",
+                "operationId": "PostAccounts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "address",
+                        "in": "query",
+                        "description": "Address"
+                    },
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "bounceurl",
+                        "in": "query",
+                        "description": "Bounce Postback URL"
+                    },
+                    {
+                        "name": "city",
+                        "in": "query",
+                        "description": "City"
+                    },
+                    {
+                        "name": "companyname",
+                        "in": "query",
+                        "description": "Required. Name of the company that the account is associated with."
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Two-letter English abbreviation, based on the ISO 3166 standard"
+                    },
+                    {
+                        "name": "generatenewapikey",
+                        "in": "query",
+                        "description": "Used to create a new API key for an existing account (1 or 0)"
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "Required. Account password to be assigned. May be passed as clear text or MD5-encrypted with md5- as a prefix.nValid values and Examples:nClear text: Gat3keep3r!nMD5-encrypted: md5-025656084871ac56716d3a9ae15c9e01"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "query",
+                        "description": "Required. Phone number for the account."
+                    },
+                    {
+                        "name": "spamurl",
+                        "in": "query",
+                        "description": "Spam Postback URL"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "State"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "The timezone of the account, in [+\/-]h.mm format.nValid values and Examples:nEastern Time (USA\/Canada): -5.00nChina\/Hong Kong\/Singapore: +8.00"
+                    },
+                    {
+                        "name": "tracklinks",
+                        "in": "query",
+                        "description": "Toggle click tracking (1 or 0)"
+                    },
+                    {
+                        "name": "trackopens",
+                        "in": "query",
+                        "description": "Toggle open tracking (1 or 0)"
+                    },
+                    {
+                        "name": "trackunsubscribes",
+                        "in": "query",
+                        "description": "Toggle automatic list-unsubscribe support (1 or 0)"
+                    },
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Required. Account username to be created"
+                    },
+                    {
+                        "name": "zipcode",
+                        "in": "query",
+                        "description": "Zip"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Updating an Email Sub-Account ",
+                "description": "Updating an Email Sub-Account ",
+                "operationId": "PutAccounts",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "address",
+                        "in": "query",
+                        "description": "Address"
+                    },
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "bounceurl",
+                        "in": "query",
+                        "description": "Bounce Postback URL"
+                    },
+                    {
+                        "name": "city",
+                        "in": "query",
+                        "description": "City"
+                    },
+                    {
+                        "name": "companyname",
+                        "in": "query",
+                        "description": "Required. Name of the company that the account is associated with."
+                    },
+                    {
+                        "name": "country",
+                        "in": "query",
+                        "description": "Two-letter English abbreviation, based on the ISO 3166 standard"
+                    },
+                    {
+                        "name": "generatenewapikey",
+                        "in": "query",
+                        "description": "Used to create a new API key for an existing account (1 or 0)"
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "Required. Account password to be assigned. May be passed as clear text or MD5-encrypted with md5- as a prefix.nValid values and Examples:nClear text: Gat3keep3r!nMD5-encrypted: md5-025656084871ac56716d3a9ae15c9e01"
+                    },
+                    {
+                        "name": "phone",
+                        "in": "query",
+                        "description": "Required. Phone number for the account."
+                    },
+                    {
+                        "name": "spamurl",
+                        "in": "query",
+                        "description": "Spam Postback URL"
+                    },
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "State"
+                    },
+                    {
+                        "name": "timezone",
+                        "in": "query",
+                        "description": "The timezone of the account, in [+\/-]h.mm format.nValid values and Examples:nEastern Time (USA\/Canada): -5.00nChina\/Hong Kong\/Singapore: +8.00"
+                    },
+                    {
+                        "name": "tracklinks",
+                        "in": "query",
+                        "description": "Toggle click tracking (1 or 0)"
+                    },
+                    {
+                        "name": "trackopens",
+                        "in": "query",
+                        "description": "Toggle open tracking (1 or 0)"
+                    },
+                    {
+                        "name": "trackunsubscribes",
+                        "in": "query",
+                        "description": "Toggle automatic list-unsubscribe support (1 or 0)"
+                    },
+                    {
+                        "name": "unsubscribeurl",
+                        "in": "query",
+                        "description": "Unsubscribe postback URL."
+                    },
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Required. Account username to be created"
+                    },
+                    {
+                        "name": "zipcode",
+                        "in": "query",
+                        "description": "Zip"
+                    }
+                ]
+            }
+        },
+        "accounts\/delete": {
+            "post": {
+                "summary": "Deleting an Email Sub-Account",
+                "description": "Deleting an Email Sub-Account",
+                "operationId": "PostAccountsDelete",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Required. Account username to be created"
+                    }
+                ]
+            }
+        },
+        "opens\/count": {
+            "get": {
+                "summary": "Email Open Count",
+                "description": "Returns total number of opens for the specified account for the specified date range. Including a date range is highly recommended.",
+                "operationId": "GetOpensCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "recipients\/activate": {
+            "post": {
+                "summary": "Activate Recipient(s)",
+                "description": "Activating a specified Recipientu2019s status",
+                "operationId": "PostRecipientsActivate",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    }
+                ]
+            }
+        },
+        "recipients\/status": {
+            "get": {
+                "summary": "Retrieve Recipient(s) Status",
+                "description": "Retrieve Recipient(s) Status",
+                "operationId": "GetRecipientsStatus",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    }
+                ]
+            }
+        },
+        "reports\/bounces": {
+            "get": {
+                "summary": "Retrieve Email Bounces",
+                "description": "Retrieving the Email SPAM Complaints",
+                "operationId": "GetReportsBounces",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "bounce_code ",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "bounce_code_id ",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "bounce_rule ",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "bounce_type",
+                        "in": "query",
+                        "description": "Type of bounce for filtering.nValid Values:nhardnsoft"
+                    },
+                    {
+                        "name": "bounce_type_id ",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "noheaders",
+                        "in": "query",
+                        "description": "Determines whether or not headers are included in the response.nValid values:n1 = Exclude bounce header content from the response.n0 = Default.  Include headers in response."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "sender_id",
+                        "in": "query",
+                        "description": "Identifying number of the sender."
+                    },
+                    {
+                        "name": "startindex",
+                        "in": "query",
+                        "description": "An integer to indicate the starting index of where to begin the list of sub-accounts. Defaults to 0, returning the first 25 sub-accounts. For accounts with a large number of sub-accounts, run the method multiple times, incrementing the start index by 25 for each iteration."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/bounces\/count": {
+            "get": {
+                "summary": "Retrieve Count of Email Bounces",
+                "description": "Retrieving a total count of Email bounces using the API requires specific syntax for the REST API.",
+                "operationId": "GetReportsBouncesCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/clicks": {
+            "get": {
+                "summary": "Reports on Clicks",
+                "description": "Returns a list of links clicked for the specified account during the specified date range. Including a date range is highly recommended.",
+                "operationId": "GetReportsClicks",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "startindex",
+                        "in": "query",
+                        "description": "An integer to indicate the starting index of where to begin the list of sub-accounts. Defaults to 0, returning the first 25 sub-accounts. For accounts with a large number of sub-accounts, run the method multiple times, incrementing the start index by 25 for each iteration."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/clicks\/count": {
+            "get": {
+                "summary": "Retrieve Count of Email Links Clicked",
+                "description": "Retrieving a total of Email links clicked",
+                "operationId": "GetReportsClicksCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "domainu00a0",
+                        "in": "query",
+                        "description": "Domain of the recipient, such as &#8220;gmail.com&#8221; or &#8220;comcast.net&#8221;"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/clicks\/count\/unique": {
+            "get": {
+                "summary": "Retrieve Count of Email Links Clicked",
+                "description": "Retrieving a total of Email links clicked",
+                "operationId": "GetReportsClicksCountUnique",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "domainu00a0",
+                        "in": "query",
+                        "description": "Domain of the recipient, such as &#8220;gmail.com&#8221; or &#8220;comcast.net&#8221;"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/clicks\/unique": {
+            "get": {
+                "summary": "Unique Click Report",
+                "description": "Returns a list of unique links clicked for the specified account during the specified date range. Including a date range is highly recommended.",
+                "operationId": "GetReportsClicksUnique",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "startindex",
+                        "in": "query",
+                        "description": "An integer to indicate the starting index of where to begin the list of sub-accounts. Defaults to 0, returning the first 25 sub-accounts. For accounts with a large number of sub-accounts, run the method multiple times, incrementing the start index by 25 for each iteration."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/complaints": {
+            "get": {
+                "summary": "Retrieve Email SPAM Complaints",
+                "description": "Retrieve Email SPAM Complaints",
+                "operationId": "GetReportsComplaints",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "startindex",
+                        "in": "query",
+                        "description": "An integer to indicate the starting index of where to begin the list of sub-accounts. Defaults to 0, returning the first 25 sub-accounts. For accounts with a large number of sub-accounts, run the method multiple times, incrementing the start index by 25 for each iteration."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/complaints\/count": {
+            "get": {
+                "summary": "Retrieve Count of Email SPAM Complaints",
+                "description": "Retrieving a total count of Email complaints ",
+                "operationId": "GetReportsComplaintsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    }
+                ]
+            }
+        },
+        "reports\/delivered": {
+            "get": {
+                "summary": "Retrieve Emails Delivered",
+                "description": "Retrieve Emails Delivered",
+                "operationId": "GetReportsDelivered",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "startindex",
+                        "in": "query",
+                        "description": "An integer to indicate the starting index of where to begin the list of sub-accounts. Defaults to 0, returning the first 25 sub-accounts. For accounts with a large number of sub-accounts, run the method multiple times, incrementing the start index by 25 for each iteration."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/delivered\/count": {
+            "get": {
+                "summary": "Retrieve Count of Emails Delivered",
+                "description": "Retrieve Count of Emails Delivered",
+                "operationId": "GetReportsDeliveredCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/issues": {
+            "get": {
+                "summary": "Retrieve Email Issues",
+                "description": "Retrieve Email Issues",
+                "operationId": "GetReportsIssues",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "sender_id",
+                        "in": "query",
+                        "description": "Identifying number of the sender."
+                    },
+                    {
+                        "name": "startindex",
+                        "in": "query",
+                        "description": "An integer to indicate the starting index of where to begin the list of sub-accounts. Defaults to 0, returning the first 25 sub-accounts. For accounts with a large number of sub-accounts, run the method multiple times, incrementing the start index by 25 for each iteration."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/issues\/count": {
+            "get": {
+                "summary": "Retrieve Count of Email Issues",
+                "description": "Retrieving a total count of Email issues",
+                "operationId": "GetReportsIssuesCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    }
+                ]
+            }
+        },
+        "reports\/opens\/count\/unique": {
+            "get": {
+                "summary": "Retrieve Count of Email Opens",
+                "description": "Returns total number of unique opens for the specified account for the specified date range. Including a date range is highly recommended.",
+                "operationId": "GetReportsOpensCountUnique",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/sent": {
+            "get": {
+                "summary": "Retrieve Emails Sent",
+                "description": "Retrieve Emails Sent",
+                "operationId": "GetReportsSent",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "startindex",
+                        "in": "query",
+                        "description": "An integer to indicate the starting index of where to begin the list of sub-accounts. Defaults to 0, returning the first 25 sub-accounts. For accounts with a large number of sub-accounts, run the method multiple times, incrementing the start index by 25 for each iteration."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "reports\/sent\/count": {
+            "get": {
+                "summary": "Retrieve Count of Emails Sent",
+                "description": "Retrieve Count of Emails Sent",
+                "operationId": "GetReportsSentCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "endtime",
+                        "in": "query",
+                        "description": "Required.u00a0End date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "starttime",
+                        "in": "query",
+                        "description": "Required.u00a0Start date\/time in full,u00a0ISO 8601 format."
+                    },
+                    {
+                        "name": "[X",
+                        "in": "query",
+                        "description": "Name of searchable custom X-header. X-header names are in the format X-[name of header]. X-header values are the search parameter to find in the X-header field. Be sure to url-encode the search value."
+                    }
+                ]
+            }
+        },
+        "send": {
+            "post": {
+                "summary": "Send Email",
+                "description": "Sending Email",
+                "operationId": "PostSend",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "bcc",
+                        "in": "query",
+                        "description": "Address(es) to blind copy the email to"
+                    },
+                    {
+                        "name": "bodyhtml",
+                        "in": "query",
+                        "description": "The text\/html version of the email; this field may be encoded in 7-bit, 8-bit, quoted-printable, or base64.nNotes:n&#8211; Even though bodytext and bodyhtml are both optional, at least one of them must be provided for the email to be valid.n&#8211; If sending non-ASCII characters within your content, we recommend using Base64 encoding, as this has proven the most reliable way to preserve special characters across email providers."
+                    },
+                    {
+                        "name": "bodytext",
+                        "in": "query",
+                        "description": "The plain\/text version of the email; this field may be encoded in Base64 (recommended), quoted-printable, 8-bit, or 7-bit.nNotes:n&#8211; Even though bodytext and bodyhtml are both optional, at least one of them must be provided for the email to be valid.n&#8211; If sending non-ASCII characters within your contentu00a0you must Base64-encode it first, as this has proven the most reliable way to preserve special characters across email providers."
+                    },
+                    {
+                        "name": "cc",
+                        "in": "query",
+                        "description": "Address(es) to copy the email to"
+                    },
+                    {
+                        "name": "comments",
+                        "in": "query",
+                        "description": "Additional comments about the message."
+                    },
+                    {
+                        "name": "from",
+                        "in": "query",
+                        "description": "Required. Sender email address"
+                    },
+                    {
+                        "name": "importance",
+                        "in": "query",
+                        "description": "A hint from the originator on how important the message is. Can take values of either high, normal or low. Not related to transmission speed."
+                    },
+                    {
+                        "name": "inreplyto",
+                        "in": "query",
+                        "description": "One or more message identifier(s) of the original message(s) to which the current message is a reply."
+                    },
+                    {
+                        "name": "keywords",
+                        "in": "query",
+                        "description": "A comma-separated list of important words and phrases useful for recipient."
+                    },
+                    {
+                        "name": "messageid",
+                        "in": "query",
+                        "description": "A unique message identifier that can be passed in via the api and override the Dyn automatically generated message id."
+                    },
+                    {
+                        "name": "priority",
+                        "in": "query",
+                        "description": "Values are either normal, urgent, or non-urgent. This header can influence transmission speed and delivery."
+                    },
+                    {
+                        "name": "references",
+                        "in": "query",
+                        "description": "The message identifier(s) of other message(s) to which the current message may be related."
+                    },
+                    {
+                        "name": "replyby",
+                        "in": "query",
+                        "description": "The date and time by which a reply is requested. Date-time should be in local time format such as Thu, 13 Feb 2013 23:32:54 -0330."
+                    },
+                    {
+                        "name": "replyto",
+                        "in": "query",
+                        "description": "The email address for the recipient to reply to. If left blank, defaults to the from address. The format can either be an email address or a properly formatted from header (example: &#8220;From Name&#8221; &lt;example@email.com&gt;)."
+                    },
+                    {
+                        "name": "resent",
+                        "in": "query",
+                        "description": "The date and time that a message is resent in the same format as replyby."
+                    },
+                    {
+                        "name": "sender",
+                        "in": "query",
+                        "description": "u00a0Email address of sender for filtering. Must be on the current Approved Sender list. u00a0if using a GET request, it is best practice to encode special characters such as the &#8220;at symbol&#8221; (@)."
+                    },
+                    {
+                        "name": "sensitivity",
+                        "in": "query",
+                        "description": "How sensitive it is to disclose this message with values that can be either personal, private or company confidential."
+                    },
+                    {
+                        "name": "subject",
+                        "in": "query",
+                        "description": "Required. The subject of the email being sent."
+                    },
+                    {
+                        "name": "to",
+                        "in": "query",
+                        "description": "Required. Address(es) the email will be sent to"
+                    },
+                    {
+                        "name": "xheaders",
+                        "in": "query",
+                        "description": "Any additional custom X-headers to send in the email"
+                    }
+                ]
+            }
+        },
+        "suppressions": {
+            "get": {
+                "summary": "Retrieve Suppression Email Addresses",
+                "description": "Retrieving a list of Email addresses on the suppression list",
+                "operationId": "GetSuppressions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "startdate",
+                        "in": "query",
+                        "description": "Start date\/time range in full, ISO 8601 format."
+                    },
+                    {
+                        "name": "startindex",
+                        "in": "query",
+                        "description": "An integer to indicate the starting index of where to begin the list of sub-accounts. Defaults to 0, returning the first 25 sub-accounts. For accounts with a large number of sub-accounts, run the method multiple times, incrementing the start index by 25 for each iteration."
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Add Email Address to Suppression List ",
+                "description": "Adding one or more recipients to the suppression list",
+                "operationId": "PostSuppressions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "emailaddress",
+                        "in": "query",
+                        "description": "Email address of recipient for filtering."
+                    }
+                ]
+            }
+        },
+        "suppressions\/count": {
+            "get": {
+                "summary": "Retrieve Suppression Count",
+                "description": "Retrieving the count of Email addresses on the suppression list",
+                "operationId": "GetSuppressionsCount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    },
+                    {
+                        "name": "enddate",
+                        "in": "query",
+                        "description": "End date\/time range in full, ISO 8601 format."
+                    },
+                    {
+                        "name": "startdate",
+                        "in": "query",
+                        "description": "Start date\/time range in full, ISO 8601 format."
+                    }
+                ]
+            }
+        },
+        "xheaders": {
+            "get": {
+                "summary": "Retrieving a list of custom X-header field names",
+                "description": "Retrieving a list of custom X-header field names",
+                "operationId": "GetXheaders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Update Email X-Headers ",
+                "description": "Updating the custom x-headers of an Email account",
+                "operationId": "PostXheaders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "apikey",
+                        "in": "query",
+                        "description": "Required. API key of the master account (Only the master account can have sub-accounts)"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": []
+    }
+}
