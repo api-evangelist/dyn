@@ -1,0 +1,145 @@
+{
+    "name": "Dyn",
+    "description": "Dyn is home to the world's most trusted DNS product suite and the world's most reputable Email Deliverability Service.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/582-dyn.jpg",
+    "tags": [
+        "api provider",
+        "api service provider",
+        "dns general",
+        "emails",
+        "getting started example",
+        "have api",
+        "isp",
+        "relative data",
+        "service api"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/dyn\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "DynDNS Email API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/582-dyn.jpg",
+            "humanURL": "http:\/\/dynect.net",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/dyndns-email-api.json"
+                }
+            ]
+        },
+        {
+            "name": "Dyn",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/582-dyn.jpg",
+            "humanURL": "http:\/\/dynect.net",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/dyn.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "https:\/\/api.dynect.net"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/research.dyn.com\/"
+        },
+        {
+            "type": "Blog",
+            "url": "http:\/\/dyn.com\/blog\/"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/feeds.feedburner.com\/dyn-blog"
+        },
+        {
+            "type": "Blog RSS",
+            "url": "http:\/\/research.dyn.com\/feed\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/dyn"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/dyn"
+        },
+        {
+            "type": "Developers",
+            "url": "https:\/\/help.dyn.com\/developers\/"
+        },
+        {
+            "type": "Email",
+            "url": "billing@dyndns.com"
+        },
+        {
+            "type": "Email",
+            "url": "privacy@dyn.com"
+        },
+        {
+            "type": "Forums",
+            "url": "http:\/\/www.dyndnscommunity.com\/"
+        },
+        {
+            "type": "Getting Started",
+            "url": "http:\/\/dyn.com\/product-wizard\/"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/dyninc"
+        },
+        {
+            "type": "Partners",
+            "url": "http:\/\/dyn.com\/about\/partners\/"
+        },
+        {
+            "type": "PHP SDK",
+            "url": "https:\/\/github.com\/dyninc\/dyn-php\/"
+        },
+        {
+            "type": "Privacy",
+            "url": "http:\/\/dyn.com\/legal\/dyn-privacy-policy\/"
+        },
+        {
+            "type": "Python SDK",
+            "url": "https:\/\/github.com\/dyninc\/dyn-python\/"
+        },
+        {
+            "type": "Registration",
+            "url": "https:\/\/account.dyn.com\/entrance\/"
+        },
+        {
+            "type": "Status",
+            "url": "http:\/\/www.dynstatus.com\/"
+        },
+        {
+            "type": "Terms of Service",
+            "url": "http:\/\/dyn.com\/legal\/dyn-services-agreement\/"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/Dyn"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/dynect.net"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/dyn.com\/"
+        }
+    ]
+}
