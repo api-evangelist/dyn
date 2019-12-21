@@ -1,5 +1,5 @@
 {
-    "id": "c1479b71108766cfbda2c2efd9112aed",
+    "id": "aa28634f223a34615f25ccfc9d4ba8b4",
     "name": "Dyn",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "cb91d2b74f275f4b784f9dbcb3a5db31",
+            "id": "3573a96009315ecb2ec49911640ac82e",
             "name": "Retrieve email sub-accounts",
             "url": "httpsaccounts",
             "description": "Retrieving a list of up to 25 Email Sub-Accounts",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "06368a3e791003e29c7d760e9cad30a2",
+            "id": "50054dac2196453dd7e0ac2ca1bc8e01",
             "name": "Create an Email Sub-Account (API)",
             "url": "httpsaccounts",
             "description": "Creating an Email Sub-Account using the API requires specific syntax for the REST API.",
@@ -187,11 +187,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "98df7207986808d1e8c1f078bef6d284",
+            "id": "9e891b3a9009fe08e0aaa8f9ebe00c75",
             "name": "Updating an Email Sub-Account ",
             "url": "httpsaccounts",
             "description": "Updating an Email Sub-Account ",
@@ -337,11 +337,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "1cdd29ccab0607847a1db5b519d9dc80",
+            "id": "e36c824d71533fd198dd00c2c3dca4b5",
             "name": "Deleting an Email Sub-Account",
             "url": "httpsaccounts\/delete",
             "description": "Deleting an Email Sub-Account",
@@ -375,11 +375,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "aa75e775aea42b68e2552aa576e66405",
+            "id": "d4bb126ab6d03cc1224c008aecc0f4ab",
             "name": "Email Open Count",
             "url": "httpsopens\/count",
             "description": "Returns total number of opens for the specified account for the specified date range. Including a date range is highly recommended.",
@@ -441,11 +441,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "6d7f4c5542204c78c082baa3ac44ac44",
+            "id": "d929f95a74081fc788dab2df93d327eb",
             "name": "Activate Recipient(s)",
             "url": "httpsrecipients\/activate",
             "description": "Activating a specified Recipientu2019s status",
@@ -479,11 +479,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "959060023e976f34d0ab5c9810df7843",
+            "id": "b641dd693740886ad58cdf6ef3374039",
             "name": "Retrieve Recipient(s) Status",
             "url": "httpsrecipients\/status",
             "description": "Retrieve Recipient(s) Status",
@@ -517,11 +517,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "03f8a3844cebffb61ae46b88a55e4056",
+            "id": "9102d35aa0fc415511296ceb5761d2bc",
             "name": "Retrieve Email Bounces",
             "url": "httpsreports\/bounces",
             "description": "Retrieving the Email SPAM Complaints",
@@ -639,11 +639,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "aaed37cae8649e32edcaeb9ea4109fd9",
+            "id": "c932573ad9604491942cc929b4adb9cc",
             "name": "Retrieve Count of Email Bounces",
             "url": "httpsreports\/bounces\/count",
             "description": "Retrieving a total count of Email bounces using the API requires specific syntax for the REST API.",
@@ -698,11 +698,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "2efa4907b7dad6066b31118ec6a46979",
+            "id": "90e97f7790fdf86997af415618c0bbaf",
             "name": "Reports on Clicks",
             "url": "httpsreports\/clicks",
             "description": "Returns a list of links clicked for the specified account during the specified date range. Including a date range is highly recommended.",
@@ -771,11 +771,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "1f6283626520aedc68f16b68d77b46fa",
+            "id": "bd12beb8f226133267522795d53fdc64",
             "name": "Retrieve Count of Email Links Clicked",
             "url": "httpsreports\/clicks\/count",
             "description": "Retrieving a total of Email links clicked",
@@ -844,11 +844,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "e10521643c3ce0e0977cd6d075799c05",
+            "id": "55ee5d3040bb128e90540bfe1ea2786c",
             "name": "Retrieve Count of Email Links Clicked",
             "url": "httpsreports\/clicks\/count\/unique",
             "description": "Retrieving a total of Email links clicked",
@@ -917,11 +917,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "4192050173532eee1e315f7b9749bcec",
+            "id": "e04630e8bfec8f9724619b742743d08c",
             "name": "Unique Click Report",
             "url": "httpsreports\/clicks\/unique",
             "description": "Returns a list of unique links clicked for the specified account during the specified date range. Including a date range is highly recommended.",
@@ -990,11 +990,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "df3008819ae851ca3596753743f9f8ad",
+            "id": "ecbe2d688d8188bf6c155e66328aa9af",
             "name": "Retrieve Email SPAM Complaints",
             "url": "httpsreports\/complaints",
             "description": "Retrieve Email SPAM Complaints",
@@ -1056,11 +1056,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "587296abcd4c40777f3acafff1995780",
+            "id": "0af75a64217aafb41017d3b9c5c8f47c",
             "name": "Retrieve Count of Email SPAM Complaints",
             "url": "httpsreports\/complaints\/count",
             "description": "Retrieving a total count of Email complaints ",
@@ -1101,11 +1101,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "87a32aabc1f9bb949045e0a517d785cb",
+            "id": "e96403d0b7862ff6fc235c6e941e3f7a",
             "name": "Retrieve Emails Delivered",
             "url": "httpsreports\/delivered",
             "description": "Retrieve Emails Delivered",
@@ -1167,11 +1167,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "35bd3caee8444524fd8734e9dacdf411",
+            "id": "de3d1edd2bcf1d3ff507bc50dc946715",
             "name": "Retrieve Count of Emails Delivered",
             "url": "httpsreports\/delivered\/count",
             "description": "Retrieve Count of Emails Delivered",
@@ -1226,11 +1226,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "8f9f4415f91e63a1b8abf2a0e7d861b8",
+            "id": "cb37f6f76110315d51ca8662b97de6f2",
             "name": "Retrieve Email Issues",
             "url": "httpsreports\/issues",
             "description": "Retrieve Email Issues",
@@ -1306,11 +1306,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "34046212c92829b3f81d6f24d1c0f1cf",
+            "id": "6614293fdbf380c12aedd3e7c8236ad0",
             "name": "Retrieve Count of Email Issues",
             "url": "httpsreports\/issues\/count",
             "description": "Retrieving a total count of Email issues",
@@ -1351,11 +1351,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "fbbeabb80352d7c3eb70be7ddd74f137",
+            "id": "cd886532996b0d2784d93a4c05bc5af3",
             "name": "Retrieve Count of Email Opens",
             "url": "httpsreports\/opens\/count\/unique",
             "description": "Returns total number of unique opens for the specified account for the specified date range. Including a date range is highly recommended.",
@@ -1417,11 +1417,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "aec4888d46a92aacd93f87bb1a5a66e3",
+            "id": "648bc5107915e06b14cd544e047e2b9e",
             "name": "Retrieve Emails Sent",
             "url": "httpsreports\/sent",
             "description": "Retrieve Emails Sent",
@@ -1483,11 +1483,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "087d50c48ff7ec1df9286008b31cc570",
+            "id": "d69b753702f6a7780c767607a87c4df1",
             "name": "Retrieve Count of Emails Sent",
             "url": "httpsreports\/sent\/count",
             "description": "Retrieve Count of Emails Sent",
@@ -1542,11 +1542,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "0e87548ca25a13ba7c8596581222776c",
+            "id": "5c17d87118db1607a2b03d7fbf743115",
             "name": "Send Email",
             "url": "httpssend",
             "description": "Sending Email",
@@ -1713,11 +1713,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "6c45efcf8a59af5d375a6af081b819f6",
+            "id": "a33ad49d1170ec96dcf61ed3dcc372d5",
             "name": "Retrieve Suppression Email Addresses",
             "url": "httpssuppressions",
             "description": "Retrieving a list of Email addresses on the suppression list",
@@ -1758,11 +1758,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "365018ac618110f32f86b08addd05364",
+            "id": "f61f0a733bcc8c33700064237f8a5b0a",
             "name": "Add Email Address to Suppression List ",
             "url": "httpssuppressions",
             "description": "Adding one or more recipients to the suppression list",
@@ -1796,11 +1796,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "ca1bc3ef1471b20d16ef7f5df747b32d",
+            "id": "7a5055fc5811097c6a077d612cba4470",
             "name": "Retrieve Suppression Count",
             "url": "httpssuppressions\/count",
             "description": "Retrieving the count of Email addresses on the suppression list",
@@ -1841,11 +1841,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "830931d9bf48fd67465be160a79e3cbe",
+            "id": "a7fbe06ef3a305ccca57dd678ef0ad22",
             "name": "Retrieving a list of custom X-header field names",
             "url": "httpsxheaders",
             "description": "Retrieving a list of custom X-header field names",
@@ -1872,11 +1872,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         },
         {
-            "id": "7e0c946bb6f775a90c11c78d0a8dd39e",
+            "id": "bd10b82574fd41cd0b7366197c79291d",
             "name": "Update Email X-Headers ",
             "url": "httpsxheaders",
             "description": "Updating the custom x-headers of an Email account",
@@ -1903,7 +1903,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c1479b71108766cfbda2c2efd9112aed",
+            "collectionId": "aa28634f223a34615f25ccfc9d4ba8b4",
             "rawModeData": ""
         }
     ]
